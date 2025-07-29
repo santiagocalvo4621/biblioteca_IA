@@ -1,0 +1,131 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Contenedor general */
+.catalogo-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Título */
+
+h1 {
+  text-align: center;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+
+/* Buscador grande, centrado y moderno */
+#buscador {
+  display: block;
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: 2px solid #00bcd4;
+  border-radius: 25px;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#buscador:focus {
+  border-color: #0097a7;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.6);
+}
+
+/* Contenedor de tarjetas */
+#catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cada tarjeta de documento */
+.documento {
+  background: #1e1e1e;
+  width: 250px;
+  height: 460px; /* ajusta según necesidad */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+  padding: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Imagen de portada */
+.documento .portada {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Título */
+.documento h3 {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #00bcd4;
+  flex-shrink: 0;
+  text-align: justify;
+}
+
+/* Descripción y otros textos */
+.documento p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #ccc;
+  flex-shrink: 0;
+  text-align: justify;
+}
+
+/* Botón "Ver documento" */
+.documento a {
+  margin-top: auto; /* siempre queda abajo */
+  display: inline-block;
+  color: #121212;
+  background-color: #00bcd4;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.documento a:hover {
+  background-color: #0097a7;
+}
+
+
+.boton-regresar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #00bcd4;
+  color: #121212;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.boton-regresar:hover { /*activa el punto reo del mose al señalar cmabia de color*/
+  background-color: #0097a7;
+}
+
+
